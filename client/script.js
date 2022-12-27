@@ -84,13 +84,13 @@ const handleSubmit = async (e) => {
 
   // fetch data from server -> bot's response
   const response = await fetch("https://codex-la.onrender.com", {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+        'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      prompt: data.get("prompt"),
-    }),
+        prompt: data.get('prompt')
+    })
   });
 
   clearInterval(loadInterval);
